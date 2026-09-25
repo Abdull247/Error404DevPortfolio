@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
 import { Hero } from "@/components/hero";
-import { ProcessSection } from "@/components/process-section";
 import { SelectedWork } from "@/components/selected-work";
+import { ServicesSection } from "@/components/services-section";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { StackSection } from "@/components/stack-section";
@@ -28,7 +28,7 @@ function Home() {
           <SelectedWork />
           <AboutSection />
           <StackSection />
-          <ProcessSection />
+          <ServicesSection />
           <ContactSection />
         </main>
         <SiteFooter />

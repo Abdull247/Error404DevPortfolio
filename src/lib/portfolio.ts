@@ -1,40 +1,44 @@
 export const profile = {
-  name: "Rowan Hale",
-  short: "RH",
-  role: "Interface Engineer",
-  location: "Lisbon",
-  timezone: "Europe/Lisbon",
-  email: "hello@rowanhale.dev",
-  availability: "Select work · Q4 2026",
-  tagline: "Interfaces, systems, and the space between.",
+  name: "Error404",
+  short: "404",
+  role: "Mobile engineer",
+  location: "Remote",
+  timezone: "Africa/Lagos",
+  email: "hello@error404.dev",
+  github: "https://github.com/error404",
+  linkedin: "https://www.linkedin.com/in/error404",
+  availability: "Open for select work",
+  tagline: "Native mobile, reliable backends, and automations that stay out of the way.",
   summary:
-    "I design and build product interfaces — the kind that have to work at 2am and still look like someone cared. Staff-shaped, independent, and happiest at the seam between design and engineering.",
+    "I ship Android products in Kotlin and Jetpack Compose — and still speak fluent Java and XML when a codebase needs it. Around that I build Fastify and Express services, React surfaces, and n8n plus Python automations so the app, the API, and the ops layer feel like one system.",
 };
 
 export const nav = [
   { href: "#work", label: "Work" },
   { href: "#about", label: "About" },
   { href: "#stack", label: "Stack" },
-  { href: "#process", label: "Process" },
+  { href: "#services", label: "Services" },
   { href: "#contact", label: "Contact" },
 ] as const;
 
 export const stats = [
-  { value: "08", label: "Years shipping" },
-  { value: "24", label: "Products launched" },
-  { value: "04", label: "Teams led" },
-  { value: "01", label: "Studio" },
+  { value: "06", label: "Years shipping" },
+  { value: "18", label: "Apps released" },
+  { value: "12", label: "APIs in production" },
+  { value: "40+", label: "Automations live" },
 ] as const;
 
 export const ticker = [
-  "Product interfaces",
-  "Design systems",
-  "Type-safe platforms",
-  "Design-engineering",
-  "Accessibility",
-  "Motion with restraint",
-  "Internal tools",
-  "Design ops",
+  "Jetpack Compose",
+  "Kotlin",
+  "Java & XML",
+  "Fastify",
+  "Express",
+  "React",
+  "Python",
+  "n8n",
+  "AI automation",
+  "Android",
 ];
 
 export type Project = {
@@ -52,124 +56,118 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "ledger",
+    id: "northline",
     index: "01",
-    title: "Ledger",
+    title: "Northline",
     year: "2025",
-    type: "Fintech console",
-    role: "Lead engineer",
-    summary: "A real-time treasury surface for operators who live in the numbers.",
+    type: "Android · Compose",
+    role: "Lead mobile engineer",
+    summary: "A Compose transit app that treats live arrivals as a product, not a list.",
     detail:
-      "Rebuilt the treasury desk as a single sharp workspace: live positions, exception queues, and a keyboard-first table that holds up under pressure. Cut time-to-decision on large transfers from minutes to a glance.",
-    stack: ["TypeScript", "React", "TanStack Table", "WebSocket"],
+      "Designed and shipped the Android client in Kotlin and Jetpack Compose: offline-first routes, a glanceable arrivals surface, and motion that stays quiet until a connection is about to drop. Cut time-to-first-useful-screen and made the network layer recoverable instead of optimistic.",
+    stack: ["Kotlin", "Jetpack Compose", "Coroutines", "Room"],
     image: "/projects/ledger.jpg",
   },
   {
-    id: "atlas",
+    id: "switchboard",
     index: "02",
-    title: "Atlas",
-    year: "2024",
-    type: "Design system",
-    role: "Staff engineer",
-    summary: "A component registry and token pipeline used across four product teams.",
-    detail:
-      "Named every surface, shipped a documented primitive set, and wired tokens so product UI and marketing stopped drifting. Adoption went from a Figma file to the actual production tree.",
-    stack: ["React", "Tailwind", "Tokens", "Storybook"],
-    image: "/projects/atlas.jpg",
-  },
-  {
-    id: "signal",
-    index: "03",
-    title: "Signal",
+    title: "Switchboard",
     year: "2025",
-    type: "Observability",
-    role: "Product engineer",
-    summary: "Job traces and failure patterns, drawn as a readable timeline.",
+    type: "Automation · API",
+    role: "Backend & automation",
+    summary: "Fastify plus n8n — ops that used to live in Slack threads, now a system.",
     detail:
-      "Turned a wall of logs into a structured trace view with filters that match how on-call actually thinks. The first screen answers “is it us?” before anyone opens a dashboard.",
-    stack: ["TypeScript", "React", "Recharts", "Postgres"],
+      "Wired a Fastify service to an n8n layer so support, billing, and on-call stop copy-pasting between tools. Python jobs handle the messy transforms. The first screen answers what failed, who owns it, and whether a human still needs to touch it.",
+    stack: ["Node.js", "Fastify", "n8n", "Python"],
     image: "/projects/signal.jpg",
   },
   {
-    id: "halo",
-    index: "04",
-    title: "Halo",
-    year: "2023",
-    type: "Scheduling",
-    role: "Frontend lead",
-    summary: "Clinic scheduling that treats the calendar as a serious interface.",
+    id: "fieldkit",
+    index: "03",
+    title: "Fieldkit",
+    year: "2024",
+    type: "Android · Java / XML",
+    role: "Mobile engineer",
+    summary: "A field-ops Android app modernized without throwing the XML away.",
     detail:
-      "Designed the week view, drag rules, and conflict states for a clinic network. Staff stopped keeping a paper backup. The UI is quiet on a good day and loud only when a slot is about to break.",
-    stack: ["TypeScript", "React", "DnD", "Accessibility"],
+      "Inherited a Java and XML codebase that crews actually used offline. Stabilized the forms, introduced Kotlin where it paid off, and kept the XML layouts that already worked. Sync stopped being a nightly ritual. Staff stopped carrying paper backups.",
+    stack: ["Java", "XML", "Kotlin", "SQLite"],
     image: "/projects/halo.jpg",
+  },
+  {
+    id: "harbor",
+    index: "04",
+    title: "Harbor",
+    year: "2024",
+    type: "Web · React",
+    role: "Full-stack engineer",
+    summary: "A React console on Express for operators who live in exceptions.",
+    detail:
+      "Built the web surface and the Express API as one contract: queues, status, and the few actions that matter. CSS is deliberate, not decorative. The UI is quiet on a good day and only loud when a job is about to break.",
+    stack: ["React", "CSS", "Express", "Node.js"],
+    image: "/projects/atlas.jpg",
   },
 ];
 
 export const stackGroups = [
   {
-    heading: "Interface",
-    items: ["React", "TypeScript", "TanStack", "Tailwind", "Radix"],
+    heading: "Mobile",
+    items: ["Kotlin", "Jetpack Compose", "Java", "XML", "Coroutines"],
   },
   {
-    heading: "Systems",
-    items: ["Node", "Postgres", "Redis", "GraphQL", "Vite"],
+    heading: "Backend",
+    items: ["Node.js", "Fastify", "Express", "REST", "Postgres"],
   },
   {
-    heading: "Craft",
-    items: ["Design systems", "A11y", "Motion", "Docs", "Code review"],
+    heading: "Web",
+    items: ["React", "CSS", "TypeScript", "Vite", "TanStack"],
   },
   {
-    heading: "Shape",
-    items: ["IA", "Prototyping", "Design-eng", "Hiring", "Mentorship"],
+    heading: "Automation",
+    items: ["n8n", "Python", "AI workflows", "Webhooks", "Cron"],
   },
 ] as const;
 
-export const processSteps = [
+export const services = [
   {
     index: "01",
-    title: "Discover",
-    body: "Constraints, users, and the actual problem — not the requested feature.",
+    title: "Native Android",
+    body: "Compose-first products, or Java and XML codebases that still have to ship. Offline, sync, and UI that holds up in the field.",
   },
   {
     index: "02",
-    title: "Frame",
-    body: "Information architecture, interface contracts, and the tokens that hold them.",
+    title: "APIs that last",
+    body: "Fastify and Express services with clear contracts, boring reliability, and the logs operators actually read.",
   },
   {
     index: "03",
-    title: "Build",
-    body: "Type-safe UI, measured performance, and states for empty, error, and load.",
+    title: "Web consoles",
+    body: "React and CSS for the people who run the product — tables, queues, and states for empty, error, and load.",
   },
   {
     index: "04",
-    title: "Ship",
-    body: "Reviews, instrumentation, and the last ten percent that makes it feel finished.",
+    title: "AI automation",
+    body: "n8n and Python workflows that connect the app to the rest of the business, with a human still in the loop.",
   },
 ] as const;
 
 export const experience = [
   {
-    period: "2024 — Now",
+    period: "2023 — Now",
     title: "Independent engineer",
-    org: "Studio",
-    body: "Product interfaces for seed and series-A teams. Staff-shaped, embedded, finite.",
+    org: "Error404",
+    body: "Android products, Node services, and automation for teams that need one person who can close the loop.",
   },
   {
-    period: "2022 — 2024",
-    title: "Staff engineer",
-    org: "Atelier North",
-    body: "Design system and web platform. Four products, one language.",
-  },
-  {
-    period: "2020 — 2022",
-    title: "Product engineer",
+    period: "2021 — 2023",
+    title: "Android engineer",
     org: "Fieldline",
-    body: "Editor, collab, and the surface researchers actually lived in.",
+    body: "Kotlin, Compose, and the XML that was already in production. Shipping was the point.",
   },
   {
-    period: "2018 — 2020",
-    title: "Frontend engineer",
+    period: "2019 — 2021",
+    title: "Mobile engineer",
     org: "Northwind",
-    body: "Merchant dashboard, money movement, and the unforgiving empty states.",
+    body: "Java Android, payment surfaces, and the unforgiving empty states of money movement.",
   },
 ] as const;

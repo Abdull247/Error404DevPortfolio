@@ -48,16 +48,14 @@ export function SiteHeader() {
       <div className="flex h-14 items-stretch">
         <a
           href="#top"
-          className="flex w-14 shrink-0 items-center justify-center bg-ink font-display text-sm font-bold tracking-wide text-sheet focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-sheet"
+          className="flex w-14 shrink-0 items-center justify-center bg-ink font-mono text-xs font-medium tracking-widest text-sheet focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-sheet"
         >
           {profile.short}
         </a>
         <div className="flex min-w-0 flex-1 items-center border-l border-ink px-3">
           <div className="min-w-0 leading-tight">
-            <p className="truncate font-display text-sm font-bold tracking-wide uppercase">
-              {profile.name}
-            </p>
-            <p className="truncate text-section uppercase tracking-widest text-muted">
+            <p className="truncate font-display text-lg tracking-tight">{profile.name}</p>
+            <p className="truncate font-mono text-section uppercase tracking-widest text-muted">
               {profile.role}
             </p>
           </div>
@@ -68,14 +66,14 @@ export function SiteHeader() {
             <a
               key={item.href}
               href={item.href}
-              className="inline-flex items-center border-l border-ink px-4 text-section font-medium uppercase tracking-widest text-ink hover:bg-hatch focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-ink"
+              className="inline-flex items-center border-l border-ink px-4 font-mono text-section font-medium uppercase tracking-widest text-ink hover:bg-hatch focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-ink"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        <div className="hidden items-center border-l border-ink px-4 text-section font-medium uppercase tracking-widest text-ink md:flex">
+        <div className="hidden items-center border-l border-ink px-4 font-mono text-section font-medium uppercase tracking-widest text-ink md:flex">
           {profile.location}
           <span className="mx-2 text-muted">/</span>
           <span className="tabular-nums">{clock}</span>
@@ -106,7 +104,7 @@ export function SiteHeader() {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="flex h-14 items-center border-b border-ink px-4 font-display text-lg font-bold uppercase tracking-wide last:border-b-0 hover:bg-hatch focus-visible:outline-2 focus-visible:outline-ink"
+              className="flex h-14 items-center border-b border-ink px-4 font-display text-2xl tracking-tight last:border-b-0 hover:bg-hatch focus-visible:outline-2 focus-visible:outline-ink"
             >
               {item.label}
             </a>

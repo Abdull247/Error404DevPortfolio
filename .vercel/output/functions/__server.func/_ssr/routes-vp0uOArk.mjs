@@ -6,19 +6,21 @@ import { i as string, r as object } from "../_libs/zod.mjs";
 import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
 import { a as DialogOverlay, i as DialogDescription, l as Slot, n as DialogClose, o as DialogPortal, r as DialogContent, s as DialogTitle, t as Dialog } from "../_libs/@radix-ui/react-dialog+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-BoNQ5PFH.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-vp0uOArk.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var profile = {
-	name: "Rowan Hale",
-	short: "RH",
-	role: "Interface Engineer",
-	location: "Lisbon",
-	timezone: "Europe/Lisbon",
-	email: "hello@rowanhale.dev",
-	availability: "Select work · Q4 2026",
-	tagline: "Interfaces, systems, and the space between.",
-	summary: "I design and build product interfaces — the kind that have to work at 2am and still look like someone cared. Staff-shaped, independent, and happiest at the seam between design and engineering."
+	name: "Error404",
+	short: "404",
+	role: "Mobile engineer",
+	location: "Remote",
+	timezone: "Africa/Lagos",
+	email: "hello@error404.dev",
+	github: "https://github.com/error404",
+	linkedin: "https://www.linkedin.com/in/error404",
+	availability: "Open for select work",
+	tagline: "Native mobile, reliable backends, and automations that stay out of the way.",
+	summary: "I ship Android products in Kotlin and Jetpack Compose — and still speak fluent Java and XML when a codebase needs it. Around that I build Fastify and Express services, React surfaces, and n8n plus Python automations so the app, the API, and the ops layer feel like one system."
 };
 var nav = [
 	{
@@ -34,8 +36,8 @@ var nav = [
 		label: "Stack"
 	},
 	{
-		href: "#process",
-		label: "Process"
+		href: "#services",
+		label: "Services"
 	},
 	{
 		href: "#contact",
@@ -44,190 +46,186 @@ var nav = [
 ];
 var stats = [
 	{
-		value: "08",
+		value: "06",
 		label: "Years shipping"
 	},
 	{
-		value: "24",
-		label: "Products launched"
+		value: "18",
+		label: "Apps released"
 	},
 	{
-		value: "04",
-		label: "Teams led"
+		value: "12",
+		label: "APIs in production"
 	},
 	{
-		value: "01",
-		label: "Studio"
+		value: "40+",
+		label: "Automations live"
 	}
 ];
 var ticker = [
-	"Product interfaces",
-	"Design systems",
-	"Type-safe platforms",
-	"Design-engineering",
-	"Accessibility",
-	"Motion with restraint",
-	"Internal tools",
-	"Design ops"
+	"Jetpack Compose",
+	"Kotlin",
+	"Java & XML",
+	"Fastify",
+	"Express",
+	"React",
+	"Python",
+	"n8n",
+	"AI automation",
+	"Android"
 ];
 var projects = [
 	{
-		id: "ledger",
+		id: "northline",
 		index: "01",
-		title: "Ledger",
+		title: "Northline",
 		year: "2025",
-		type: "Fintech console",
-		role: "Lead engineer",
-		summary: "A real-time treasury surface for operators who live in the numbers.",
-		detail: "Rebuilt the treasury desk as a single sharp workspace: live positions, exception queues, and a keyboard-first table that holds up under pressure. Cut time-to-decision on large transfers from minutes to a glance.",
+		type: "Android · Compose",
+		role: "Lead mobile engineer",
+		summary: "A Compose transit app that treats live arrivals as a product, not a list.",
+		detail: "Designed and shipped the Android client in Kotlin and Jetpack Compose: offline-first routes, a glanceable arrivals surface, and motion that stays quiet until a connection is about to drop. Cut time-to-first-useful-screen and made the network layer recoverable instead of optimistic.",
 		stack: [
-			"TypeScript",
-			"React",
-			"TanStack Table",
-			"WebSocket"
+			"Kotlin",
+			"Jetpack Compose",
+			"Coroutines",
+			"Room"
 		],
 		image: "/projects/ledger.jpg"
 	},
 	{
-		id: "atlas",
+		id: "switchboard",
 		index: "02",
-		title: "Atlas",
-		year: "2024",
-		type: "Design system",
-		role: "Staff engineer",
-		summary: "A component registry and token pipeline used across four product teams.",
-		detail: "Named every surface, shipped a documented primitive set, and wired tokens so product UI and marketing stopped drifting. Adoption went from a Figma file to the actual production tree.",
-		stack: [
-			"React",
-			"Tailwind",
-			"Tokens",
-			"Storybook"
-		],
-		image: "/projects/atlas.jpg"
-	},
-	{
-		id: "signal",
-		index: "03",
-		title: "Signal",
+		title: "Switchboard",
 		year: "2025",
-		type: "Observability",
-		role: "Product engineer",
-		summary: "Job traces and failure patterns, drawn as a readable timeline.",
-		detail: "Turned a wall of logs into a structured trace view with filters that match how on-call actually thinks. The first screen answers “is it us?” before anyone opens a dashboard.",
+		type: "Automation · API",
+		role: "Backend & automation",
+		summary: "Fastify plus n8n — ops that used to live in Slack threads, now a system.",
+		detail: "Wired a Fastify service to an n8n layer so support, billing, and on-call stop copy-pasting between tools. Python jobs handle the messy transforms. The first screen answers what failed, who owns it, and whether a human still needs to touch it.",
 		stack: [
-			"TypeScript",
-			"React",
-			"Recharts",
-			"Postgres"
+			"Node.js",
+			"Fastify",
+			"n8n",
+			"Python"
 		],
 		image: "/projects/signal.jpg"
 	},
 	{
-		id: "halo",
-		index: "04",
-		title: "Halo",
-		year: "2023",
-		type: "Scheduling",
-		role: "Frontend lead",
-		summary: "Clinic scheduling that treats the calendar as a serious interface.",
-		detail: "Designed the week view, drag rules, and conflict states for a clinic network. Staff stopped keeping a paper backup. The UI is quiet on a good day and loud only when a slot is about to break.",
+		id: "fieldkit",
+		index: "03",
+		title: "Fieldkit",
+		year: "2024",
+		type: "Android · Java / XML",
+		role: "Mobile engineer",
+		summary: "A field-ops Android app modernized without throwing the XML away.",
+		detail: "Inherited a Java and XML codebase that crews actually used offline. Stabilized the forms, introduced Kotlin where it paid off, and kept the XML layouts that already worked. Sync stopped being a nightly ritual. Staff stopped carrying paper backups.",
 		stack: [
-			"TypeScript",
-			"React",
-			"DnD",
-			"Accessibility"
+			"Java",
+			"XML",
+			"Kotlin",
+			"SQLite"
 		],
 		image: "/projects/halo.jpg"
+	},
+	{
+		id: "harbor",
+		index: "04",
+		title: "Harbor",
+		year: "2024",
+		type: "Web · React",
+		role: "Full-stack engineer",
+		summary: "A React console on Express for operators who live in exceptions.",
+		detail: "Built the web surface and the Express API as one contract: queues, status, and the few actions that matter. CSS is deliberate, not decorative. The UI is quiet on a good day and only loud when a job is about to break.",
+		stack: [
+			"React",
+			"CSS",
+			"Express",
+			"Node.js"
+		],
+		image: "/projects/atlas.jpg"
 	}
 ];
 var stackGroups = [
 	{
-		heading: "Interface",
+		heading: "Mobile",
+		items: [
+			"Kotlin",
+			"Jetpack Compose",
+			"Java",
+			"XML",
+			"Coroutines"
+		]
+	},
+	{
+		heading: "Backend",
+		items: [
+			"Node.js",
+			"Fastify",
+			"Express",
+			"REST",
+			"Postgres"
+		]
+	},
+	{
+		heading: "Web",
 		items: [
 			"React",
+			"CSS",
 			"TypeScript",
-			"TanStack",
-			"Tailwind",
-			"Radix"
+			"Vite",
+			"TanStack"
 		]
 	},
 	{
-		heading: "Systems",
+		heading: "Automation",
 		items: [
-			"Node",
-			"Postgres",
-			"Redis",
-			"GraphQL",
-			"Vite"
-		]
-	},
-	{
-		heading: "Craft",
-		items: [
-			"Design systems",
-			"A11y",
-			"Motion",
-			"Docs",
-			"Code review"
-		]
-	},
-	{
-		heading: "Shape",
-		items: [
-			"IA",
-			"Prototyping",
-			"Design-eng",
-			"Hiring",
-			"Mentorship"
+			"n8n",
+			"Python",
+			"AI workflows",
+			"Webhooks",
+			"Cron"
 		]
 	}
 ];
-var processSteps = [
+var services = [
 	{
 		index: "01",
-		title: "Discover",
-		body: "Constraints, users, and the actual problem — not the requested feature."
+		title: "Native Android",
+		body: "Compose-first products, or Java and XML codebases that still have to ship. Offline, sync, and UI that holds up in the field."
 	},
 	{
 		index: "02",
-		title: "Frame",
-		body: "Information architecture, interface contracts, and the tokens that hold them."
+		title: "APIs that last",
+		body: "Fastify and Express services with clear contracts, boring reliability, and the logs operators actually read."
 	},
 	{
 		index: "03",
-		title: "Build",
-		body: "Type-safe UI, measured performance, and states for empty, error, and load."
+		title: "Web consoles",
+		body: "React and CSS for the people who run the product — tables, queues, and states for empty, error, and load."
 	},
 	{
 		index: "04",
-		title: "Ship",
-		body: "Reviews, instrumentation, and the last ten percent that makes it feel finished."
+		title: "AI automation",
+		body: "n8n and Python workflows that connect the app to the rest of the business, with a human still in the loop."
 	}
 ];
 var experience = [
 	{
-		period: "2024 — Now",
+		period: "2023 — Now",
 		title: "Independent engineer",
-		org: "Studio",
-		body: "Product interfaces for seed and series-A teams. Staff-shaped, embedded, finite."
+		org: "Error404",
+		body: "Android products, Node services, and automation for teams that need one person who can close the loop."
 	},
 	{
-		period: "2022 — 2024",
-		title: "Staff engineer",
-		org: "Atelier North",
-		body: "Design system and web platform. Four products, one language."
-	},
-	{
-		period: "2020 — 2022",
-		title: "Product engineer",
+		period: "2021 — 2023",
+		title: "Android engineer",
 		org: "Fieldline",
-		body: "Editor, collab, and the surface researchers actually lived in."
+		body: "Kotlin, Compose, and the XML that was already in production. Shipping was the point."
 	},
 	{
-		period: "2018 — 2020",
-		title: "Frontend engineer",
+		period: "2019 — 2021",
+		title: "Mobile engineer",
 		org: "Northwind",
-		body: "Merchant dashboard, money movement, and the unforgiving empty states."
+		body: "Java Android, payment surfaces, and the unforgiving empty states of money movement."
 	}
 ];
 function cn(...inputs) {
@@ -239,20 +237,20 @@ function AboutSection() {
 		className: "border-b border-ink",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]",
+				className: "grid lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-					className: "border-b border-ink px-4 py-6 sm:px-6 sm:py-8 lg:border-r lg:border-b-0 lg:px-8",
+					className: "border-b border-ink px-4 py-8 sm:px-6 sm:py-10 lg:border-r lg:border-b-0 lg:px-10",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "text-section font-medium uppercase tracking-widest text-muted",
-						children: "01 — About"
+						className: "font-mono text-section font-medium uppercase tracking-widest text-muted",
+						children: "02 — About"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						className: "mt-3 font-display text-display font-bold tracking-tight uppercase",
-						children: "Built at the seam"
+						className: "mt-3 font-display text-display tracking-display",
+						children: "The loop, closed"
 					})]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "px-4 py-6 sm:px-6 sm:py-8 lg:px-8",
+					className: "px-4 py-8 sm:px-6 sm:py-10 lg:px-10",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "max-w-xl text-base leading-relaxed",
+						className: "max-w-xl text-base leading-relaxed sm:text-lg",
 						children: profile.summary
 					})
 				})]
@@ -260,12 +258,12 @@ function AboutSection() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "grid grid-cols-2 border-t border-ink sm:grid-cols-4",
 				children: stats.map((stat, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: cn("px-4 py-5 sm:px-5 sm:py-6", index % 2 === 1 && "border-l border-ink", index > 1 && "border-t border-ink sm:border-t-0", index > 0 && "sm:border-l"),
+					className: cn("px-4 py-6 sm:px-5 sm:py-7", index % 2 === 1 && "border-l border-ink", index > 1 && "border-t border-ink sm:border-t-0", index > 0 && "sm:border-l"),
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "font-display text-3xl font-bold tracking-tight tabular-nums sm:text-5xl",
+						className: "font-display text-4xl tracking-tight tabular-nums sm:text-5xl",
 						children: stat.value
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "mt-1 text-section uppercase tracking-widest text-muted",
+						className: "mt-2 font-mono text-section uppercase tracking-widest text-muted",
 						children: stat.label
 					})]
 				}, stat.label))
@@ -273,20 +271,20 @@ function AboutSection() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "border-t border-ink",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "border-b border-ink px-4 py-3 sm:px-6",
+					className: "border-b border-ink px-4 py-3 sm:px-6 lg:px-10",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-						className: "text-section font-medium uppercase tracking-widest text-muted",
+						className: "font-mono text-section font-medium uppercase tracking-widest text-muted",
 						children: "Experience"
 					})
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", { children: experience.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-					className: "grid gap-1 border-b border-ink px-4 py-4 last:border-b-0 sm:grid-cols-[9.5rem_1fr] sm:gap-8 sm:px-6 sm:py-5 lg:grid-cols-[11rem_14rem_1fr]",
+					className: "grid gap-1 border-b border-ink px-4 py-5 last:border-b-0 sm:grid-cols-[9.5rem_1fr] sm:gap-8 sm:px-6 lg:grid-cols-[11rem_14rem_1fr] lg:px-10",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "text-section uppercase tracking-widest text-muted",
+							className: "font-mono text-section uppercase tracking-widest text-muted",
 							children: item.period
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "font-display text-base font-bold uppercase tracking-wide sm:text-lg",
+							className: "font-display text-xl tracking-tight",
 							children: item.title
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "text-sm text-muted",
@@ -302,7 +300,7 @@ function AboutSection() {
 		]
 	});
 }
-var buttonVariants = cva("relative inline-flex min-w-0 items-center justify-center gap-2 overflow-hidden font-sans text-sm font-medium tracking-wide uppercase select-none touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink disabled:pointer-events-none disabled:opacity-40 transition-[transform,color,background-color] duration-150 ease-out-sharp active:not-disabled:scale-[0.98]", {
+var buttonVariants = cva("relative inline-flex min-w-0 items-center justify-center gap-2 overflow-hidden font-mono text-sm font-medium tracking-widest uppercase select-none touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink disabled:pointer-events-none disabled:opacity-40 transition-[transform,color,background-color] duration-150 ease-out-sharp active:not-disabled:scale-[0.98]", {
 	variants: {
 		variant: {
 			solid: "border border-ink bg-ink text-sheet hover:bg-paper hover:text-ink",
@@ -368,7 +366,7 @@ function Input({ className, type, ...props }) {
 }
 function Label({ className, ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
-		className: cn("text-section font-medium uppercase tracking-[0.16em] text-muted", className),
+		className: cn("font-mono text-section font-medium uppercase tracking-widest text-muted", className),
 		...props
 	});
 }
@@ -407,7 +405,7 @@ function ContactSection() {
 		}
 		setErrors({});
 		try {
-			window.localStorage.setItem("rowan-hale-brief", JSON.stringify({
+			window.localStorage.setItem("error404-brief", JSON.stringify({
 				...parsed.data,
 				at: (/* @__PURE__ */ new Date()).toISOString()
 			}));
@@ -420,23 +418,23 @@ function ContactSection() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "grid lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-				className: "flex flex-col justify-between gap-6 border-b border-ink px-4 py-6 sm:px-6 sm:py-8 lg:border-r lg:border-b-0 lg:px-8 lg:py-10",
+				className: "flex flex-col justify-between gap-8 border-b border-ink px-4 py-8 sm:px-6 sm:py-10 lg:border-r lg:border-b-0 lg:px-10 lg:py-12",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "text-section font-medium uppercase tracking-widest text-muted",
+						className: "font-mono text-section font-medium uppercase tracking-widest text-muted",
 						children: "05 — Contact"
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						className: "mt-2 font-display text-display font-bold tracking-tight uppercase",
+						className: "mt-2 font-display text-display tracking-display",
 						children: "Send a brief"
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "mt-3 max-w-sm text-base leading-relaxed",
-						children: "New product, a design system in trouble, or a surface that needs to grow up. I take a small number of engagements per quarter."
+						className: "mt-4 max-w-sm text-base leading-relaxed",
+						children: "A new Android product, a Java codebase that needs to grow up, an API, or an automation that should stop living in a spreadsheet. I take a small number of engagements at a time."
 					})
 				] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 					href: `mailto:${profile.email}`,
-					className: "inline-flex w-fit items-center gap-2 border border-ink bg-paper px-3 py-2.5 font-display text-sm font-bold uppercase tracking-wide hover:bg-ink hover:text-sheet focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:text-base",
+					className: "inline-flex w-fit items-center gap-2 border border-ink bg-paper px-3 py-2.5 font-mono text-sm uppercase tracking-widest hover:bg-ink hover:text-sheet focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink",
 					children: [profile.email, /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, {
 						className: "size-4",
 						strokeWidth: 1.75
@@ -445,14 +443,14 @@ function ContactSection() {
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "lg:min-h-full",
 				children: status === "sent" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "flex h-full min-h-56 flex-col justify-center bg-sheet px-4 py-8 sm:px-6",
+					className: "flex h-full min-h-56 flex-col justify-center bg-sheet px-4 py-10 sm:px-6",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, {
-							className: "size-7",
+							className: "size-6",
 							strokeWidth: 1.75
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "mt-4 font-display text-2xl font-bold uppercase tracking-wide",
+							className: "mt-4 font-display text-3xl tracking-tight",
 							children: "Brief received"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -504,7 +502,7 @@ function ContactSection() {
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Textarea, {
 								id: "message",
 								name: "message",
-								placeholder: "What are you building, and what do you need from an interface engineer?"
+								placeholder: "What are you building — an Android app, an API, or an automation?"
 							})
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
@@ -541,13 +539,14 @@ var cells = 24;
 var filled = /* @__PURE__ */ new Set([
 	0,
 	3,
-	7,
+	4,
 	8,
 	11,
 	14,
-	18,
-	20,
-	22
+	15,
+	19,
+	22,
+	23
 ]);
 var meta = [
 	{
@@ -560,11 +559,11 @@ var meta = [
 	},
 	{
 		label: "Focus",
-		value: "Product UI"
+		value: "Android / APIs"
 	},
 	{
 		label: "Status",
-		value: "Booking Q4"
+		value: "Available"
 	}
 ];
 function Hero() {
@@ -572,34 +571,29 @@ function Hero() {
 		className: "border-b border-ink",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "grid lg:grid-cols-[minmax(0,1.35fr)_minmax(17rem,0.75fr)]",
+				className: "grid lg:grid-cols-[minmax(0,1.4fr)_minmax(16rem,0.7fr)]",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "flex flex-col justify-center gap-6 px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16",
+					className: "flex flex-col justify-center gap-6 px-4 py-10 sm:px-6 sm:py-14 lg:px-10 lg:py-20",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "stagger-in flex flex-col gap-5",
+						className: "stagger-in flex flex-col gap-6",
 						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-section font-medium uppercase tracking-widest text-muted",
-								children: profile.availability
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+								className: "flex items-center gap-3 font-mono text-section uppercase tracking-widest text-muted",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "inline-block size-1.5 bg-signal",
+									"aria-hidden": "true"
+								}), profile.availability]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
-								className: "font-display text-hero leading-hero font-extrabold tracking-tight uppercase",
-								children: [
-									"Rowan",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-									"Hale"
-								]
+								className: "font-display text-hero leading-hero tracking-display text-ink",
+								children: ["Error", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-signal",
+									children: "404"
+								})]
 							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-								className: "max-w-md text-base leading-relaxed text-ink",
-								children: [
-									profile.tagline,
-									" ",
-									profile.role,
-									" in ",
-									profile.location,
-									", working with teams who treat the interface as a product."
-								]
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "max-w-lg text-base leading-relaxed text-ink sm:text-lg",
+								children: profile.tagline
 							})
 						]
 					})
@@ -607,7 +601,7 @@ function Hero() {
 					className: "hidden border-l border-ink lg:flex lg:flex-col",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "flex items-center justify-between border-b border-ink px-5 py-3 text-section font-medium uppercase tracking-widest text-muted",
+							className: "flex items-center justify-between border-b border-ink px-5 py-3 font-mono text-section uppercase tracking-widest text-muted",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Index" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "text-ink",
 								children: "00 / Hero"
@@ -617,12 +611,16 @@ function Hero() {
 							className: "grid grid-cols-6 border-b border-ink",
 							children: Array.from({ length: cells }, (_, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: cn("aspect-square border-r border-b border-ink", index % 6 === 5 && "border-r-0", filled.has(index) ? "bg-ink" : "bg-paper") }, index))
 						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "border-b border-ink px-5 py-4 font-mono text-section leading-relaxed uppercase tracking-widest text-muted",
+							children: "Kotlin · Compose · Node · n8n"
+						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dl", {
 							className: "mt-auto",
 							children: meta.map((row) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-baseline justify-between gap-4 border-t border-ink px-5 py-3 first:border-t-0",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
-									className: "text-section uppercase tracking-widest text-muted",
+									className: "font-mono text-section uppercase tracking-widest text-muted",
 									children: row.label
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
 									className: "text-right text-sm font-medium",
@@ -638,7 +636,7 @@ function Hero() {
 				children: meta.map((row, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: cn("flex min-w-0 flex-col gap-1 px-4 py-3", index % 2 === 1 && "border-l border-ink", index > 1 && "border-t border-ink"),
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
-						className: "text-section uppercase tracking-widest text-muted",
+						className: "font-mono text-section uppercase tracking-widest text-muted",
 						children: row.label
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
 						className: "truncate text-sm font-medium",
@@ -652,7 +650,7 @@ function Hero() {
 					href: "#work",
 					variant: "bar",
 					className: "border-b border-ink sm:border-r sm:border-b-0",
-					children: ["View work", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowDownRight, {
+					children: ["Selected work", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowDownRight, {
 						className: "size-4",
 						strokeWidth: 1.75
 					})]
@@ -668,57 +666,22 @@ function Hero() {
 		]
 	});
 }
-function ProcessSection() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-		id: "process",
-		className: "border-b border-ink",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-			className: "border-b border-ink px-4 py-6 sm:px-6 sm:py-8 lg:px-8",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				className: "text-section font-medium uppercase tracking-widest text-muted",
-				children: "04 — Process"
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-				className: "mt-2 font-display text-display font-bold tracking-tight uppercase",
-				children: "How a brief becomes a surface"
-			})]
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
-			className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
-			children: processSteps.map((step, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-				className: cn("flex flex-col px-4 py-6 sm:px-5 sm:py-7", index > 0 && "border-t border-ink sm:border-t-0", index > 1 && "sm:border-t lg:border-t-0", index % 2 === 1 && "sm:border-l", index > 0 && "lg:border-l lg:border-t-0"),
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "font-display text-3xl font-bold tabular-nums tracking-tight text-hatch sm:text-4xl",
-						children: step.index
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-						className: "mt-4 font-display text-xl font-bold uppercase tracking-wide sm:mt-6 sm:text-2xl",
-						children: step.title
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "mt-2 text-sm leading-relaxed text-muted",
-						children: step.body
-					})
-				]
-			}, step.index))
-		})]
-	});
-}
 function SelectedWork() {
 	const [active, setActive] = (0, import_react.useState)(null);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "work",
 		className: "border-b border-ink",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-			className: "flex flex-col gap-2 border-b border-ink px-4 py-6 sm:flex-row sm:items-end sm:justify-between sm:gap-8 sm:px-6 sm:py-8 lg:px-8",
+			className: "flex flex-col gap-3 border-b border-ink px-4 py-8 sm:flex-row sm:items-end sm:justify-between sm:gap-10 sm:px-6 sm:py-10 lg:px-10",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				className: "text-section font-medium uppercase tracking-widest text-muted",
-				children: "02 — Selected work"
+				className: "font-mono text-section font-medium uppercase tracking-widest text-muted",
+				children: "01 — Selected work"
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-				className: "mt-2 font-display text-display font-bold tracking-tight uppercase",
-				children: "Four recent surfaces"
+				className: "mt-2 font-display text-display tracking-display",
+				children: "Four recent builds"
 			})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "max-w-sm text-sm leading-relaxed text-muted",
-				children: "Open a cell for the brief, the stack, and what changed after it shipped."
+				children: "Mobile products, APIs, and automations. Open a cell for the brief and the stack."
 			})]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Dialog, {
 			open: active !== null,
@@ -738,18 +701,18 @@ function SelectedWork() {
 							alt: "",
 							width: 1792,
 							height: 1008,
-							className: "aspect-video w-full object-cover outline outline-1 -outline-offset-1 outline-ink/15 transition-transform duration-200 ease-out-sharp group-hover:scale-105 group-active:scale-105",
+							className: "aspect-video w-full object-cover outline outline-1 -outline-offset-1 outline-ink/15 transition-transform duration-200 ease-out-sharp group-hover:scale-[1.03] group-active:scale-[1.03]",
 							loading: index === 0 ? "eager" : "lazy",
 							decoding: "async"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "absolute top-0 left-0 border-r border-b border-ink bg-paper px-2 py-1 font-display text-xs font-bold tabular-nums",
+							className: "absolute top-0 left-0 border-r border-b border-ink bg-paper px-2 py-1 font-mono text-xs tabular-nums",
 							children: project.index
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex flex-1 flex-col gap-2 bg-paper px-4 py-4 transition-colors duration-150 group-hover:bg-ink group-hover:text-sheet group-active:bg-ink group-active:text-sheet sm:px-5 sm:py-5",
+						className: "flex flex-1 flex-col gap-2 bg-paper px-4 py-5 transition-colors duration-150 group-hover:bg-ink group-hover:text-sheet group-active:bg-ink group-active:text-sheet sm:px-6 sm:py-6",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex items-center justify-between gap-3 text-section uppercase tracking-widest text-muted group-hover:text-hatch group-active:text-hatch",
+								className: "flex items-center justify-between gap-3 font-mono text-section uppercase tracking-widest text-muted group-hover:text-hatch group-active:text-hatch",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: project.type }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "tabular-nums",
 									children: project.year
@@ -758,10 +721,10 @@ function SelectedWork() {
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex items-end justify-between gap-3",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-									className: "font-display text-2xl font-bold tracking-tight uppercase sm:text-3xl",
+									className: "font-display text-3xl tracking-tight sm:text-4xl",
 									children: project.title
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, {
-									className: "mb-0.5 size-4 shrink-0 opacity-40 transition-opacity duration-150 group-hover:opacity-100 sm:size-5",
+									className: "mb-1 size-4 shrink-0 opacity-40 transition-opacity duration-150 group-hover:opacity-100 sm:size-5",
 									strokeWidth: 1.75
 								})]
 							}),
@@ -772,7 +735,7 @@ function SelectedWork() {
 						]
 					})]
 				}, project.id))
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogPortal, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay, { className: "fixed inset-0 z-50 bg-ink/40" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogContent, {
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogPortal, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay, { className: "fixed inset-0 z-50 bg-ink/45" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogContent, {
 				className: "fixed inset-0 z-50 flex flex-col overflow-hidden border-0 bg-paper focus:outline-none sm:inset-auto sm:top-1/2 sm:left-1/2 sm:h-auto sm:max-h-[min(40rem,calc(100dvh-2rem))] sm:w-[min(42rem,calc(100vw-2rem))] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:border sm:border-ink",
 				children: active ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "relative shrink-0 border-b border-ink",
@@ -794,7 +757,7 @@ function SelectedWork() {
 					className: "min-h-0 flex-1 overflow-y-auto px-4 py-5 sm:px-6",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-							className: "text-section uppercase tracking-widest text-muted",
+							className: "font-mono text-section uppercase tracking-widest text-muted",
 							children: [
 								active.index,
 								" — ",
@@ -804,7 +767,7 @@ function SelectedWork() {
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle, {
-							className: "mt-2 font-display text-3xl font-bold tracking-tight uppercase",
+							className: "mt-2 font-display text-4xl tracking-tight",
 							children: active.title
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription, {
@@ -818,7 +781,7 @@ function SelectedWork() {
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
 							className: "mt-5 flex flex-wrap",
 							children: active.stack.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
-								className: "-mr-px -mb-px border border-ink bg-sheet px-3 py-1.5 text-section font-medium uppercase tracking-widest",
+								className: "-mr-px -mb-px border border-ink bg-sheet px-3 py-1.5 font-mono text-section font-medium uppercase tracking-widest",
 								children: item
 							}, item))
 						})
@@ -828,13 +791,48 @@ function SelectedWork() {
 		})]
 	});
 }
+function ServicesSection() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		id: "services",
+		className: "border-b border-ink",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+			className: "border-b border-ink px-4 py-8 sm:px-6 sm:py-10 lg:px-10",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "font-mono text-section font-medium uppercase tracking-widest text-muted",
+				children: "04 — Services"
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+				className: "mt-2 font-display text-display tracking-display",
+				children: "How a brief becomes a build"
+			})]
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
+			className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
+			children: services.map((step, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+				className: cn("flex flex-col px-4 py-7 sm:px-6 sm:py-8", index > 0 && "border-t border-ink sm:border-t-0", index > 1 && "sm:border-t lg:border-t-0", index % 2 === 1 && "sm:border-l", index > 0 && "lg:border-l lg:border-t-0"),
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						className: "font-mono text-sm tabular-nums tracking-widest text-signal",
+						children: step.index
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+						className: "mt-5 font-display text-2xl tracking-tight sm:mt-6",
+						children: step.title
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-3 text-sm leading-relaxed text-muted",
+						children: step.body
+					})
+				]
+			}, step.index))
+		})]
+	});
+}
 function SiteFooter() {
 	const year = (/* @__PURE__ */ new Date()).getFullYear();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", {
 		className: "grid grid-cols-1 sm:grid-cols-3",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-				className: "border-b border-ink px-4 py-3 text-section uppercase tracking-widest text-muted sm:border-b-0 sm:border-r sm:px-6 sm:py-4",
+				className: "border-b border-ink px-4 py-3 font-mono text-section uppercase tracking-widest text-muted sm:border-b-0 sm:border-r sm:px-6 sm:py-4",
 				children: [
 					"© ",
 					year,
@@ -842,13 +840,13 @@ function SiteFooter() {
 					profile.name
 				]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-				className: "border-b border-ink px-4 py-3 text-section uppercase tracking-widest text-muted sm:border-b-0 sm:border-r sm:px-6 sm:py-4",
-				children: [profile.location, " · Sharp edges, quiet interfaces"]
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "border-b border-ink px-4 py-3 font-mono text-section uppercase tracking-widest text-muted sm:border-b-0 sm:border-r sm:px-6 sm:py-4",
+				children: "Mobile · Backend · Automation"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 				href: "#top",
-				className: "px-4 py-3 text-section font-medium uppercase tracking-widest text-ink hover:bg-hatch focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-ink sm:px-6 sm:py-4",
+				className: "px-4 py-3 font-mono text-section font-medium uppercase tracking-widest text-ink hover:bg-hatch focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-ink sm:px-6 sm:py-4",
 				children: "Back to top"
 			})
 		]
@@ -894,7 +892,7 @@ function SiteHeader() {
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 					href: "#top",
-					className: "flex w-14 shrink-0 items-center justify-center bg-ink font-display text-sm font-bold tracking-wide text-sheet focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-sheet",
+					className: "flex w-14 shrink-0 items-center justify-center bg-ink font-mono text-xs font-medium tracking-widest text-sheet focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-sheet",
 					children: profile.short
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -902,10 +900,10 @@ function SiteHeader() {
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "min-w-0 leading-tight",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "truncate font-display text-sm font-bold tracking-wide uppercase",
+							className: "truncate font-display text-lg tracking-tight",
 							children: profile.name
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "truncate text-section uppercase tracking-widest text-muted",
+							className: "truncate font-mono text-section uppercase tracking-widest text-muted",
 							children: profile.role
 						})]
 					})
@@ -915,12 +913,12 @@ function SiteHeader() {
 					"aria-label": "Primary",
 					children: nav.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 						href: item.href,
-						className: "inline-flex items-center border-l border-ink px-4 text-section font-medium uppercase tracking-widest text-ink hover:bg-hatch focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-ink",
+						className: "inline-flex items-center border-l border-ink px-4 font-mono text-section font-medium uppercase tracking-widest text-ink hover:bg-hatch focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-ink",
 						children: item.label
 					}, item.href))
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "hidden items-center border-l border-ink px-4 text-section font-medium uppercase tracking-widest text-ink md:flex",
+					className: "hidden items-center border-l border-ink px-4 font-mono text-section font-medium uppercase tracking-widest text-ink md:flex",
 					children: [
 						profile.location,
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -960,7 +958,7 @@ function SiteHeader() {
 				children: nav.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 					href: item.href,
 					onClick: () => setOpen(false),
-					className: "flex h-14 items-center border-b border-ink px-4 font-display text-lg font-bold uppercase tracking-wide last:border-b-0 hover:bg-hatch focus-visible:outline-2 focus-visible:outline-ink",
+					className: "flex h-14 items-center border-b border-ink px-4 font-display text-2xl tracking-tight last:border-b-0 hover:bg-hatch focus-visible:outline-2 focus-visible:outline-ink",
 					children: item.label
 				}, item.href))
 			})
@@ -972,25 +970,25 @@ function StackSection() {
 		id: "stack",
 		className: "border-b border-ink",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-			className: "border-b border-ink px-4 py-6 sm:px-6 sm:py-8 lg:px-8",
+			className: "border-b border-ink px-4 py-8 sm:px-6 sm:py-10 lg:px-10",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				className: "text-section font-medium uppercase tracking-widest text-muted",
+				className: "font-mono text-section font-medium uppercase tracking-widest text-muted",
 				children: "03 — Stack"
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-				className: "mt-2 font-display text-display font-bold tracking-tight uppercase",
-				children: "Tools I keep sharp"
+				className: "mt-2 font-display text-display tracking-display",
+				children: "Tools that stay sharp"
 			})]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			className: "grid grid-cols-2 lg:grid-cols-4",
 			children: stackGroups.map((group, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: cn("px-4 py-5 sm:px-5 sm:py-6", index % 2 === 1 && "border-l border-ink", index > 1 && "border-t border-ink lg:border-t-0", index > 0 && "lg:border-l"),
+				className: cn("px-4 py-6 sm:px-6 sm:py-8", index % 2 === 1 && "border-l border-ink", index > 1 && "border-t border-ink lg:border-t-0", index > 0 && "lg:border-l"),
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-					className: "text-section font-medium uppercase tracking-widest text-muted",
+					className: "font-mono text-section font-medium uppercase tracking-widest text-muted",
 					children: group.heading
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
-					className: "mt-3 space-y-1.5",
+					className: "mt-4 space-y-2",
 					children: group.items.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
-						className: "font-display text-lg font-bold uppercase tracking-wide sm:text-xl",
+						className: "font-display text-xl tracking-tight sm:text-2xl",
 						children: item
 					}, item))
 				})]
@@ -1006,10 +1004,10 @@ function Ticker() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			className: "marquee-track flex w-max items-center",
 			children: loop.map((item, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-				className: "flex items-center px-4 py-2.5 font-display text-xs font-bold uppercase tracking-widest sm:px-5 sm:py-3 sm:text-sm",
+				className: "flex items-center px-4 py-2.5 font-mono text-xs font-medium uppercase tracking-widest sm:px-5 sm:py-3",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 					"aria-hidden": "true",
-					className: "mr-4 text-hatch",
+					className: "mr-4 text-signal",
 					children: "/"
 				}), item]
 			}, `${item}-${index}`))
@@ -1034,7 +1032,7 @@ function Home() {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectedWork, {}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutSection, {}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(StackSection, {}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ProcessSection, {}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ServicesSection, {}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ContactSection, {})
 				] }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SiteFooter, {})

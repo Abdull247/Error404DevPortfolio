@@ -12,9 +12,9 @@ export function Ticker() {
         {loop.map((item, index) => (
           <span
             key={`${item}-${index}`}
-            className="flex items-center px-4 py-2.5 font-display text-xs font-bold uppercase tracking-widest sm:px-5 sm:py-3 sm:text-sm"
+            className="flex items-center px-4 py-2.5 font-mono text-xs font-medium uppercase tracking-widest sm:px-5 sm:py-3"
           >
-            <span aria-hidden="true" className="mr-4 text-hatch">
+            <span aria-hidden="true" className="mr-4 text-signal">
               /
             </span>
             {item}

@@ -5,7 +5,7 @@ function Label({ className, ...props }: React.ComponentProps<"label">) {
   return (
     <label
       className={cn(
-        "text-section font-medium uppercase tracking-[0.16em] text-muted",
+        "font-mono text-section font-medium uppercase tracking-widest text-muted",
         className,
       )}
       {...props}

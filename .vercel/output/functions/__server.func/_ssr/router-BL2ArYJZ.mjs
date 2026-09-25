@@ -4,8 +4,8 @@ import { _ as useRouter, f as createRouter, g as createRootRoute, h as createFil
 import { n as require_jsx_runtime } from "../_libs/radix-ui__react-context+react.mjs";
 import { n as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-Bi-Xbfa9.js
-var router_Bi_Xbfa9_exports = /* @__PURE__ */ __exportAll({ getRouter: () => getRouter });
+//#region node_modules/.nitro/vite/services/ssr/assets/router-BL2ArYJZ.js
+var router_BL2ArYJZ_exports = /* @__PURE__ */ __exportAll({ getRouter: () => getRouter });
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var FALLBACK_MESSAGE = "An unexpected error occurred. Try reloading the page.";
@@ -29,7 +29,7 @@ function AppErrorComponent({ error }) {
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-					className: "mt-3 font-display text-lg font-bold uppercase tracking-wide",
+					className: "mt-3 font-display text-2xl tracking-tight",
 					children: "Something went wrong"
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -302,8 +302,8 @@ function PreviewHostBridge() {
 	}, [router]);
 	return null;
 }
-var styles_default = "/assets/styles-CwB8wfZf.css";
-var APP_NAME = "Rowan Hale — Interface Engineer";
+var styles_default = "/assets/styles-qL1d_4u1.css";
+var APP_NAME = "Error404 — Mobile engineer";
 var Route$1 = createRootRoute({
 	head: () => ({
 		meta: [
@@ -315,11 +315,11 @@ var Route$1 = createRootRoute({
 			{ title: APP_NAME },
 			{
 				name: "description",
-				content: "Portfolio of Rowan Hale, an interface engineer based in Lisbon. Product surfaces, design systems, and the TypeScript that holds them together."
+				content: "Portfolio of Error404, a Kotlin Compose and Android engineer. Node.js backends with Fastify and Express, React, Python, and n8n AI automation."
 			},
 			{
 				name: "theme-color",
-				content: "#ececea"
+				content: "#f3f2ee"
 			}
 		],
 		links: [
@@ -351,7 +351,7 @@ var Route$1 = createRootRoute({
 			},
 			{
 				rel: "stylesheet",
-				href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Syne:wght@600;700;800&display=swap"
+				href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap"
 			}
 		]
 	}),
@@ -369,7 +369,7 @@ var Route$1 = createRootRoute({
 		})]
 	})
 });
-var $$splitComponentImporter = () => import("./routes-BoNQ5PFH.mjs");
+var $$splitComponentImporter = () => import("./routes-vp0uOArk.mjs");
 var rootRouteChildren = { IndexRoute: createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter, "component") }).update({
 	id: "/",
 	path: "/",
@@ -383,4 +383,4 @@ function getRouter() {
 	});
 }
 //#endregion
-export { getRouter, router_Bi_Xbfa9_exports as t };
+export { getRouter, router_BL2ArYJZ_exports as t };

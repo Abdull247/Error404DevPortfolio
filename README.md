@@ -1,6 +1,6 @@
-# Rowan Hale — Portfolio
+# Error404 — Portfolio
 
-A sharp, paper-and-ink developer portfolio. Grey, black, and white surfaces with hairline rules, flush action bars, and selected work.
+A paper-and-ink developer portfolio for Error404: Kotlin / Jetpack Compose, Java and XML, Node.js (Fastify / Express), React, Python, and n8n.
 
 ## Stack
 

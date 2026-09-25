@@ -5,13 +5,15 @@
       "width": 1280,
       "height": 800,
       "status": 200,
-      "title": "Rowan Hale — Interface Engineer",
+      "title": "Error404 — Mobile engineer",
       "hasCanvas": false,
-      "bodyTextLen": 2789,
-      "bodyTextHash": "97ec2e3d59e36fe7307524dbd0d3d6e9f4a2d6f6110a87813d0f5f0d15dbe916",
-      "bodyTextPrefix": "Skip to work RH ROWAN HALE INTERFACE ENGINEER WORK ABOUT STACK P",
+      "bodyTextLen": 2968,
+      "bodyTextHash": "19346832bd17bf9389c9ef394ad3ce8e8f47c29edad8ef1c69d3fcabe5aac5ce",
+      "bodyTextPrefix": "Skip to work 404 Error404 MOBILE ENGINEER WORK ABOUT STACK SERVI",
       "horizontalOverflow": false,
-      "consoleErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+      ],
       "pageErrors": [],
       "screenshot": "/workspace/screenshots/app-builder-built.png"
     },
@@ -19,13 +21,15 @@
       "width": 390,
       "height": 844,
       "status": 200,
-      "title": "Rowan Hale — Interface Engineer",
+      "title": "Error404 — Mobile engineer",
       "hasCanvas": false,
-      "bodyTextLen": 2729,
-      "bodyTextHash": "cd94b093ec72f8ca86ffc01c5945d540925481bf01cb582dc2ea50d37410fb9b",
-      "bodyTextPrefix": "Skip to work RH ROWAN HALE OPEN MENU SELECT WORK · Q4 2026 ROWAN",
+      "bodyTextLen": 2880,
+      "bodyTextHash": "8b4ea0b7a1f1dc0ec662cabf428378c1cc89d3f7a1e0e978a94117f398c1181a",
+      "bodyTextPrefix": "Skip to work 404 Error404 MOBILE ENGINEER Open menu OPEN FOR SEL",
       "horizontalOverflow": false,
-      "consoleErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+      ],
       "pageErrors": [],
       "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
     }

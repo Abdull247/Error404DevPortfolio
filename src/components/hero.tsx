@@ -4,37 +4,37 @@ import { profile } from "@/lib/portfolio";
 import { cn } from "@/lib/utils";
 
 const cells = 24;
-const filled = new Set([0, 3, 7, 8, 11, 14, 18, 20, 22]);
+const filled = new Set([0, 3, 4, 8, 11, 14, 15, 19, 22, 23]);
 
 const meta = [
   { label: "Role", value: profile.role },
   { label: "Based", value: profile.location },
-  { label: "Focus", value: "Product UI" },
-  { label: "Status", value: "Booking Q4" },
+  { label: "Focus", value: "Android / APIs" },
+  { label: "Status", value: "Available" },
 ] as const;
 
 export function Hero() {
   return (
     <section className="border-b border-ink">
-      <div className="grid lg:grid-cols-[minmax(0,1.35fr)_minmax(17rem,0.75fr)]">
-        <div className="flex flex-col justify-center gap-6 px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-          <div className="stagger-in flex flex-col gap-5">
-            <p className="text-section font-medium uppercase tracking-widest text-muted">
+      <div className="grid lg:grid-cols-[minmax(0,1.4fr)_minmax(16rem,0.7fr)]">
+        <div className="flex flex-col justify-center gap-6 px-4 py-10 sm:px-6 sm:py-14 lg:px-10 lg:py-20">
+          <div className="stagger-in flex flex-col gap-6">
+            <p className="flex items-center gap-3 font-mono text-section uppercase tracking-widest text-muted">
+              <span className="inline-block size-1.5 bg-signal" aria-hidden="true" />
               {profile.availability}
             </p>
-            <h1 className="font-display text-hero leading-hero font-extrabold tracking-tight uppercase">
-              Rowan
-              <br />
-              Hale
+            <h1 className="font-display text-hero leading-hero tracking-display text-ink">
+              Error
+              <span className="text-signal">404</span>
             </h1>
-            <p className="max-w-md text-base leading-relaxed text-ink">
-              {profile.tagline} {profile.role} in {profile.location}, working with teams who treat the interface as a product.
+            <p className="max-w-lg text-base leading-relaxed text-ink sm:text-lg">
+              {profile.tagline}
             </p>
           </div>
         </div>
 
         <aside className="hidden border-l border-ink lg:flex lg:flex-col">
-          <div className="flex items-center justify-between border-b border-ink px-5 py-3 text-section font-medium uppercase tracking-widest text-muted">
+          <div className="flex items-center justify-between border-b border-ink px-5 py-3 font-mono text-section uppercase tracking-widest text-muted">
             <span>Index</span>
             <span className="text-ink">00 / Hero</span>
           </div>
@@ -50,13 +50,18 @@ export function Hero() {
               />
             ))}
           </div>
+          <p className="border-b border-ink px-5 py-4 font-mono text-section leading-relaxed uppercase tracking-widest text-muted">
+            Kotlin · Compose · Node · n8n
+          </p>
           <dl className="mt-auto">
             {meta.map((row) => (
               <div
                 key={row.label}
                 className="flex items-baseline justify-between gap-4 border-t border-ink px-5 py-3 first:border-t-0"
               >
-                <dt className="text-section uppercase tracking-widest text-muted">{row.label}</dt>
+                <dt className="font-mono text-section uppercase tracking-widest text-muted">
+                  {row.label}
+                </dt>
                 <dd className="text-right text-sm font-medium">{row.value}</dd>
               </div>
             ))}
@@ -74,7 +79,9 @@ export function Hero() {
               index > 1 && "border-t border-ink",
             )}
           >
-            <dt className="text-section uppercase tracking-widest text-muted">{row.label}</dt>
+            <dt className="font-mono text-section uppercase tracking-widest text-muted">
+              {row.label}
+            </dt>
             <dd className="truncate text-sm font-medium">{row.value}</dd>
           </div>
         ))}
@@ -82,7 +89,7 @@ export function Hero() {
 
       <div className="grid grid-cols-1 border-t border-ink sm:grid-cols-2">
         <ActionLink href="#work" variant="bar" className="border-b border-ink sm:border-r sm:border-b-0">
-          View work
+          Selected work
           <ArrowDownRight className="size-4" strokeWidth={1.75} />
         </ActionLink>
         <ActionLink href="#contact" variant="bar-outline">
