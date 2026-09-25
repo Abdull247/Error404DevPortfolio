@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Rowan Hale — Interface Engineer",
+      "hasCanvas": false,
+      "bodyTextLen": 2778,
+      "bodyTextHash": "c98874eb00404a797363e109d57fbbd3670e51b2846ce98a37228621fdad1a9b",
+      "bodyTextPrefix": "Skip to work RH ROWAN HALE INTERFACE ENGINEER WORK ABOUT STACK P",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Rowan Hale — Interface Engineer",
+      "hasCanvas": false,
+      "bodyTextLen": 2721,
+      "bodyTextHash": "ab29e1db5d3520cdf468aa5fa17463c86dd75f573df2822d1e8dab89261ff2ec",
+      "bodyTextPrefix": "Skip to work RH ROWAN HALE INTERFACE ENGINEER Open menu SELECT W",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
